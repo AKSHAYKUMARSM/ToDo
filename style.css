@@ -52,6 +52,7 @@ button{
     background-color: transparent;
     border: none;
     padding: 0.5rem;
+    box-sizing: border-box;
     margin: 0.5rem;
     color: blue;
 }
@@ -65,10 +66,7 @@ button:hover{
     border: none;
     box-shadow: 0 0 0.5rem yellow;
     border-radius: 2rem;
-    background-color:crimson;
     color: aliceblue;
-    float:right;
-    margin: 1.5rem;
 }
 
 #clear:hover{
@@ -99,15 +97,19 @@ button:disabled{
 #save,#load{
     background-color: green;
     color: aliceblue;
-    float:none;
+}
+
+#clear{
+    background-color: red;
 }
 
 .bar{
     display: flex;
+    flex-flow:row nowrap;
+    width: 100%;
     border-radius: 2rem;
     background-color:cornflowerblue;
     box-shadow: 0 0 .5rem yellowgreen;
-    justify-content:end;
     margin: auto;
 }
 
